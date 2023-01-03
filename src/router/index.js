@@ -18,7 +18,15 @@ const routes = [
   {
     path: '/newpage',
     name: '新增頁面',
-    component: () => import('../views/NewPage')
+    component: () => import('../views/NewPage'),
+    children: [{
+      path: 'a', // 巢狀子元件前方可不加斜線
+      component: () => import('../views/ComponentA.vue')
+    },
+    {
+      path: 'b',
+      component: () => import('../views/ComponentB.vue')
+    }]
   }
 ]
 
