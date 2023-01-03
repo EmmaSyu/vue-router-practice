@@ -28,6 +28,10 @@ const routes = [
       component: () => import('../views/ComponentB.vue')
     },
     {
+      path: 'dynamicRouter/:id',
+      component: () => import('../views/DynamicRouter.vue')
+    },
+    {
       path: 'namedView',
       component: () => import('../views/NamedView.vue'),
       children: [{
