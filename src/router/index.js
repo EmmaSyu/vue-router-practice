@@ -42,6 +42,10 @@ const routes = [
       }
     },
     {
+      path: 'routerNavigation',
+      component: () => import('../views/RouterNavigation.vue')
+    },
+    {
       path: 'namedView',
       component: () => import('../views/NamedView.vue'),
       children: [{
