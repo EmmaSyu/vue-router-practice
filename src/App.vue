@@ -1,7 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <!-- 動態屬性添加 link 方法 -->
+    <router-link :to="{ name: '新增頁面' }">新增頁面</router-link>
   </nav>
   <router-view/>
 </template>
